@@ -1,0 +1,17 @@
+
+public class Main {
+  static  int cal =0;
+
+    public static void main(String[] args) throws IOException {
+        System.out.println(solution(10,4));
+
+    }
+   public static int findGcd(int a, int b){
+     if(b==0) return a;
+     else return  findGcd(b, a%b);
+   }
+    public static int solution(int N, int M){
+       return N/ findGcd(N,M);
+    }
+    }
+
